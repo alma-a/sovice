@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider();
+        });
+    </script>
+
+    <title>EC Sovice </title>
+</head>
+
+<body>
+    <div class="topline">
+        <div style="margin: 0 auto; width: 80%;">
+            <div class="li-fa" style="width: 100%; ">
+                <a class="list-group-item" href="https://www.facebook.com/sovice.sarajevo/"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i>&nbsp; </a>
+                <a class="list-group-item" href="#"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i>&nbsp; </a>
+                <a class="list-group-item" href="https://www.instagram.com/edukativnicentarsovice/"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i>&nbsp; </a>
+                <a class="list-group-item" href="mailto:centar.sovice@gmail.com" target="_top"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i>&nbsp; </a>
+
+                <div style="float: right; display: inline-block; ">
+                    <a href="faq.html">
+                        <div class="faq"> <i class="fa fa-question"></i></div>FAQ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__inner ">
+            <img src="css/logo.png" alt="logo" style="height: 350px; width: auto; margin-bottom: 50px;" />
+        </div>
+    </header>
+    <nav id="drawer" class="nav">
+        <ul id="navlink" class="nav__list">
+            <li class="nav__item "><a href="index.html">Početna</a></li>
+            <li class="nav__item"><a href="team.html">Upoznajte naš tim</a></li>
+            <li class="nav__item"><a href="programs.html">Programi</a></li>
+            <li class="nav__item"><a href="gallery.html">Galerija</a></li>
+            <li class="nav__item"><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner ">
+        <div class="slider">
+            <img src="./images/fly_1x.jpg" alt="Supermen" />
+            <img src="./images/priredba.jpg" alt="Priredba" />
+            <img src="./images/sova_1x.jpg" alt="Sova" /></div>
+    </div>
+
+    <section>
+        <div class="links-div">
+            <div id="address" class="container">
+                <h3 style="display: block;   font-size: 30px;  font-weight: 300;  margin: 10px 0; font-family: 'Helvetica'; color: #a46a93; ">Edukativni Centar Sovice</h3>
+                <h3 style="display: block; font-size: 14px;  font-weight: 300;  margin: 10px 0; font-family: 'Helvetica';
+    color: #a46a93;;"> Antuna Branka Šimića 2/1<br>Mali Bosmal<br> 71000 Sarajevo<br> tel: +387 33 208 210<br></h3>
+                <div id="map" style="padding-top: 20px"></div>
+            </div>
+            <div class="container">
+                <form id="contact" action="send" method="post">
+                    <h3>Kontaktirajte nas</h3>
+
+                    <fieldset>
+                        <input placeholder="Vaše ime" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Vaša email adresa" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Vaš broj telefona (opcionalno)" type="tel" tabindex="3">
+                    </fieldset>
+
+                    <fieldset>
+                        <textarea placeholder="Napišite vašu poruku" tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Pošalji</button>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="cont">
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="team.html">Upoznajte naš tim</a></li>
+                    <li><a href="programs.html">Programi</a></li>
+                    <li><a href="gallery.html">Galerija</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                Pratite nas
+                <a class="list-group-item" href="https://www.facebook.com/sovice.sarajevo/"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i>&nbsp; </a>
+                <a class="list-group-item" href="#"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i>&nbsp; </a>
+                <a class="list-group-item" href="https://www.instagram.com/edukativnicentarsovice/"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i>&nbsp; </a>
+                <a class="list-group-item" href="mailto:centar.sovice@gmail.com" target="_top"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i>&nbsp; </a>
+            </div>
+            <!-- social -->
+
+        </div>
+
+        <div class="copyright">
+            Copyright @ Edukativni Centar Sovice 2018
+        </div>
+        <!-- copyright -->
+
+    </footer>
+    <div class="footer-bottom">
+        Copyright &copy; Sovice 2018
+    </div>
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("drawer");
+        var btns = header.getElementsByClassName("nav__item");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        function initMap() {
+            var uluru = {
+                lat: 43.8477024,
+                lng: 18.3744389
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru,
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKTnqbiKbrlFsb6j_siFm8KhCxFLHyJKE&callback=initMap">
+    </script>
+</body>
+
+</html>
