@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: 'Helvetica';
+    font-family: 'Alegreya Sans', 'Alegreya', 'Roboto';
     font-size: 100%;
     min-width: 360px;
 }
@@ -98,7 +98,7 @@ a:visited {
 }
 
 .nav a:hover {
-    
+
     /* TO DOOoooo*/
 }
 
@@ -115,7 +115,7 @@ a:visited {
 .li-fa {
     display: inline-block;
     color: white;
-    font-family: 'Helvetica';
+    font-family: 'Alegreya Sans';
     font-size: 1.3em;
 }
 
@@ -153,8 +153,8 @@ a {
 }
 
 .trim h1 {
-    color: white;    
-    
+    color: white;
+
 }
 
 .flex-grid {
@@ -171,11 +171,62 @@ a {
     margin: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    font-family: 'Helvetica', sans-serif;
-    text-align: center;
+    font-family: 'Alegreya Sans';
     width: 30%;
 
 }
+
+phone {
+    position: relative;
+    /* Helps us control overlap */
+    padding-left: 25px;
+    /* Creates space for the Phone Icon */
+}
+
+phone:after {
+    content: '\f095';
+    font-family: fontAwesome;
+    position: absolute;
+    left: 0;
+    /* Adjust as needed */
+    top: 0px;
+    /* Adjust as needed */
+}
+
+email {
+    position: relative;
+    /* Helps us control overlap */
+    padding-left: 25px;
+    /* Creates space for the Phone Icon */
+}
+
+email:after {
+    content: '\f0e0';
+    font-family: fontAwesome;
+    position: absolute;
+    left: 0;
+    /* Adjust as needed */
+    top: 3px;
+    /* Adjust as needed */
+}
+
+facebook {
+    position: relative;
+    /* Helps us control overlap */
+    padding-left: 25px;
+    /* Creates space for the Phone Icon */
+}
+
+facebook:after {
+    content: '\f39e';
+    font-family: fontAwesome;
+    position: absolute;
+    left: 0;
+    /* Adjust as needed */
+    top: 3px;
+    /* Adjust as needed */
+}
+
 
 .col img {
     margin: 0 0 10px;
@@ -188,6 +239,7 @@ a {
 .col-title {
     text-align: center;
     font-size: 1.3em;
+    font-family: 'Alegreya';
     text-transform: uppercase;
     font-weight: normal;
     margin: 0 0 15px;
@@ -198,11 +250,18 @@ a {
 .blue {
     color: #426f87;
 }
-
-.lila {
-    color: rgb(164, 106, 147);
+.blue .panel {
+    background-color: rgba(67, 111, 135, 0.7);
+    color: white;
 }
-
+.blue .panel .accordion {
+    background-color: red;
+    
+}
+.lila .panel {
+    background-color: rgb(164, 106, 147, 0.7);
+    color: white;
+}
 .grey {
     color: rgb(105, 105, 105);
 }
@@ -238,11 +297,13 @@ a {
     padding: 0 10px;
     display: inline-block;
     color: white;
-    font-family: 'Helvetica';
+    font-family: 'Alegreya Sans';
 }
+
 .text-button {
     font-size: 1em;
 }
+
 button {
     width: 50%;
     margin: 11px 0 0;
@@ -412,7 +473,7 @@ footer li:last-of-type {
     font-size: 30px;
     font-weight: 300;
     margin: 10px 0;
-    font-family: 'Helvetica';
+    font-family: 'Alegreya Sans';
     color: #a46a93;
     ;
 }
@@ -507,8 +568,6 @@ fieldset {
 
 /* STYLES for different devices */
 
-
-
 /* tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -536,6 +595,7 @@ fieldset {
     .nav__item {
         margin: 0;
         padding: 0.8em;
+
     }
     .links {
         flex: unset;
@@ -552,16 +612,18 @@ fieldset {
 
 }
 
-.faq
-{
-    display: inline-block; 
-    border: 1px solid white; 
-    border-radius: 100px; 
-    background: white; 
+.faq {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 100px;
+    background: white;
     color: purple;
-    margin-right: 10px; 
-    line-height: 20px;"
+    margin-right: 10px;
+    line-height: 20px;
+    "
+
 }
+
 /** mobile **/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
@@ -595,7 +657,7 @@ fieldset {
     }
     .trim h1 {
         font-size: 1.1em;
-        font-family: 'Helvetica' sans-serif;
+        font-family: 'Alegreya Sans';
     }
     button {
         font-size: 0.8em;
@@ -655,4 +717,48 @@ fieldset {
     #contact h3 {
         font-size: 1.2em;
     }
+}
+
+
+/*FAQ ONLY*/
+
+.cd-faq {
+    color: #2b4959;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.accordion {
+    font-family: 'Alegreya Sans';
+    background-color: #426f87;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #a46a93;
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.fa-angle-center {
+ margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+    
+    
 }
