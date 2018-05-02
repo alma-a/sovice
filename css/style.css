@@ -168,12 +168,16 @@ a {
 .col {
     flex-grow: 1;
     flex-wrap: wrap;
-    margin: 10px;
-    padding: 20px;
+    margin: 30px;
+    /* padding: 20px; */
     margin-bottom: 20px;
     font-family: 'Alegreya Sans';
     width: 30%;
+}
 
+.zero-horizontal-margins {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 phone {
@@ -424,7 +428,6 @@ footer li:last-of-type {
     padding: 20px;
     padding-top: 0px;
     overflow: hidden;
-
 }
 
 #map {
@@ -464,7 +467,6 @@ footer li:last-of-type {
     margin: 20px 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     width: 80%;
-
 }
 
 
@@ -575,11 +577,13 @@ fieldset {
     body {
         font-size: 1em;
     }
+    
     .col {
         width: 80%;
         flex-flow: column;
         font-size: 1.3em;
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .text-button,
@@ -589,7 +593,6 @@ fieldset {
 
     .flex-grid {
         font-size: 1em;
-        !important
     }
 
     .nav__item {
@@ -645,11 +648,13 @@ fieldset {
     .nav__list {
         display: inherit;
     }
+    
     .col {
         width: 80%;
         flex-flow: column;
         font-size: 1.3em;
         margin-bottom: 0px;
+        text-align: center;
     }
 
     .banner {
