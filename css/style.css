@@ -68,7 +68,7 @@ ul {
 }
 
 #sc1 li {
-    display: inline-block;
+/*    display: inline-block;*/
 }
 
 .nav__item {
@@ -159,25 +159,45 @@ a {
 
 .flex-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 1em;
-    margin-top: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 80%;
+    margin: 50px auto;
+    padding: 0;
 }
 
 .col {
-    flex-grow: 1;
     flex-wrap: wrap;
-    margin: 30px;
-    /* padding: 20px; */
-    margin-bottom: 20px;
     font-family: 'Alegreya Sans';
     width: 30%;
 }
 
-.zero-horizontal-margins {
-    margin-left: 0;
-    margin-right: 0;
+.left {
+    order: 1;
+    flex-basis: 100%;
+}
+
+.middle {
+    order: 1;
+    flex-basis: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.right {
+    order: 1;
+    flex-basis: 100%;
+}
+
+.col {
+
+    /*flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-bottom: 20px;
+    font-family: 'Alegreya Sans';
+    width: 30%;*/
 }
 
 phone {
@@ -231,7 +251,9 @@ facebook:after {
     /* Adjust as needed */
 }
 
-
+img {
+    width: 100%;
+}
 .col img {
     margin: 0 0 10px;
     vertical-align: middle;
@@ -254,18 +276,22 @@ facebook:after {
 .blue {
     color: #426f87;
 }
+
 .blue .panel {
     background-color: rgba(67, 111, 135, 0.7);
     color: white;
 }
+
 .blue .panel .accordion {
     background-color: red;
-    
+
 }
+
 .lila .panel {
     background-color: rgb(164, 106, 147, 0.7);
     color: white;
 }
+
 .grey {
     color: rgb(105, 105, 105);
 }
@@ -287,8 +313,7 @@ facebook:after {
 }
 
 .caption {
-    flex-direction: column;
-    display: flex;
+    margin: 0 auto;
 }
 
 .btn-holder {
@@ -305,10 +330,13 @@ facebook:after {
 }
 
 .text-button {
-    font-size: 1em;
+    font-size: 1.2em;
 }
-
-button {
+.about {
+    padding: 50px 160px; 
+    font-size: 2em;
+}
+/*button {
     width: 50%;
     margin: 11px 0 0;
     padding: 10px 30px;
@@ -317,7 +345,7 @@ button {
     background-color: #a46a93;
     border-radius: 2px;
     font-size: 1em;
-}
+}*/
 
 footer {
     bottom: 0;
@@ -575,24 +603,31 @@ fieldset {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     body {
-        font-size: 1em;
     }
-    
+
     .col {
-        width: 80%;
-        flex-flow: column;
+        width: 100%;
         font-size: 1.3em;
         margin-bottom: 50px;
         text-align: center;
-    }
 
+    }
+    .accordion {
+        font-size: 1.6em!important;
+    }
+    .middle {
+        margin: 50px 0;
+    }
     .text-button,
     .button-holder {
         width: auto;
     }
 
     .flex-grid {
+        width: 80%;
+        flex-direction: column;
         font-size: 1em;
+        margin: 50px auto;
     }
 
     .nav__item {
@@ -612,8 +647,12 @@ fieldset {
         order: 3;
         flex-basis: 100%;
     }
-
+    .text-button {
+    font-size: 1.4em;
 }
+    
+}
+
 
 .faq {
     display: inline-block;
@@ -627,9 +666,18 @@ fieldset {
 
 }
 
+/*Desktop*/
+
+@media only screen and (min-width: 1025) {
+    .zero-horizontal-margins {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 /** mobile **/
 
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
     .container #address {
         text-align: center;
@@ -648,12 +696,12 @@ fieldset {
     .nav__list {
         display: inherit;
     }
-    
+
     .col {
-        width: 80%;
+        width: 100%;
         flex-flow: column;
         font-size: 1.3em;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
         text-align: center;
     }
 
@@ -663,9 +711,6 @@ fieldset {
     .trim h1 {
         font-size: 1.1em;
         font-family: 'Alegreya Sans';
-    }
-    button {
-        font-size: 0.8em;
     }
 
     .links-div {
@@ -689,7 +734,6 @@ fieldset {
     .links {
         width: 100%;
         flex-basis: 100%;
-
     }
 
     #address {
@@ -722,6 +766,17 @@ fieldset {
     #contact h3 {
         font-size: 1.2em;
     }
+    .flex-grid {
+        flex-direction: column;
+        font-size:1em;
+    }
+    .middle {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    img {
+        width: 100%;
+    }
 }
 
 
@@ -729,8 +784,10 @@ fieldset {
 
 .cd-faq {
     color: #2b4959;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -744,26 +801,27 @@ fieldset {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 1em;
     transition: 0.4s;
 }
 
 .active,
 .accordion:hover {
-    background-color: #a46a93;
+    background-color: rgba(66, 111, 135, 0.92);
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 0 0;
+    margin: 0;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    font-size: 1.2em;
 }
 
 .fa-angle-center {
- margin: 0 auto;
+    margin: 0 auto;
     text-align: center;
     font-size: 2em;
-    
-    
 }
