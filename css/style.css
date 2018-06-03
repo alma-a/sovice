@@ -3,14 +3,15 @@ html {
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    max-width: 1200px;
     height: 100%;
     overflow: visible;
 }
 
 body {
-    font-family: 'Alegreya Sans', 'Alegreya', 'Roboto';
+    font-family: 'Alegreya Sans', 'Alegreya';
     font-size: 100%;
-    min-width: 360px;
+    min-width: 320px;
 }
 
 .social {
@@ -38,13 +39,14 @@ ul {
 }
 
 .header__inner {
-    margin: 50px 0 0 auto;
-    text-align: center;
+    margin: 0 auto;
+    text-align:  center;
     display: block;
+    width:30%;    
 }
 
 .nav {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     border-bottom: 2px solid rgba(192, 192, 192, .5);
     border-top: 2px solid rgba(192, 192, 192, .5);
@@ -52,9 +54,8 @@ ul {
 }
 
 .logo {
-    height: 350px;
-    width: auto;
-    margin-bottom: 50px;
+    width: 100%;
+    margin: 50px 0 50px 0;
 }
 
 #sc1 {
@@ -68,12 +69,11 @@ ul {
 }
 
 #sc1 li {
-/*    display: inline-block;*/
+    /*    display: inline-block;*/
 }
 
 .nav__item {
-    flex-wrap: nowrap;
-    flex-flow: row;
+   
     align-content: stretch;
     justify-content: space-around;
     text-transform: uppercase;
@@ -86,6 +86,8 @@ ul {
 .nav a {
     text-decoration: none;
     color: #426f87;
+    font-size: 1.3em;
+    font-family: 'Alegrey';
 }
 
 .active a {
@@ -110,12 +112,10 @@ a:visited {
     flex-wrap: wrap;
 }
 
-
-
 .li-fa {
     display: inline-block;
     color: white;
-    font-family: 'Alegreya Sans';
+    font-family: 'Alegreya';
     font-size: 1.3em;
 }
 
@@ -135,7 +135,7 @@ a {
     display: block;
     margin: 50px auto;
     text-align: center;
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 
@@ -146,7 +146,7 @@ a {
 
 .trim {
     display: block;
-    margin: 0 auto;
+    margin: 50px auto;
     text-align: center;
     background-color: rgb(164, 106, 147);
     padding: 4%;
@@ -154,7 +154,6 @@ a {
 
 .trim h1 {
     color: white;
-
 }
 
 .flex-grid {
@@ -162,7 +161,7 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
-    width: 80%;
+    width: 90%;
     margin: 50px auto;
     padding: 0;
 }
@@ -254,6 +253,7 @@ facebook:after {
 img {
     width: 100%;
 }
+
 .col img {
     margin: 0 0 10px;
     vertical-align: middle;
@@ -269,12 +269,13 @@ img {
     text-transform: uppercase;
     font-weight: normal;
     margin: 0 0 15px;
-    line-height: 1.4;
+    line-height: 1.4em;
     display: block;
 }
 
 .blue {
-    color: #426f87;
+    /*    color: #426f87;*/
+    color: rgb(105, 105, 105);
 }
 
 .blue .panel {
@@ -290,6 +291,10 @@ img {
 .lila .panel {
     background-color: rgb(164, 106, 147, 0.7);
     color: white;
+}
+
+.lila {
+    color: rgb(105, 105, 105);
 }
 
 .grey {
@@ -323,7 +328,7 @@ img {
 }
 
 .links a {
-    padding: 0 10px;
+    padding: 10px;
     display: inline-block;
     color: white;
     font-family: 'Alegreya Sans';
@@ -331,11 +336,16 @@ img {
 
 .text-button {
     font-size: 1.2em;
+    line-height:1.4em;
+
 }
+
 .about {
-    padding: 50px 160px; 
+    padding: 50px 160px;
     font-size: 2em;
+    line-height: 1.3em;
 }
+
 /*button {
     width: 50%;
     margin: 11px 0 0;
@@ -386,8 +396,6 @@ footer li:last-of-type {
     flex: 1;
     text-align: right;
 }
-
-.links {}
 
 .social a {
     color: white;
@@ -467,6 +475,13 @@ footer li:last-of-type {
 .links-div {
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
+}
+
+<!-- gallery-- > .gallery {
+    width: 90%;
+    margin: 50px auto;
+
 }
 
 <!-- contact form-- > @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
@@ -596,14 +611,13 @@ fieldset {
     color: #888;
 }
 
+
+
 /* STYLES for different devices */
 
 /* tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    body {
-    }
 
     .col {
         width: 100%;
@@ -615,16 +629,14 @@ fieldset {
     .accordion {
         font-size: 1.6em!important;
     }
-    .middle {
-        margin: 50px 0;
-    }
+
     .text-button,
     .button-holder {
         width: auto;
     }
 
     .flex-grid {
-        width: 80%;
+        width: 84%;
         flex-direction: column;
         font-size: 1em;
         margin: 50px auto;
@@ -633,6 +645,7 @@ fieldset {
     .nav__item {
         margin: 0;
         padding: 0.8em;
+        font-size: 0.9em;
 
     }
     .links {
@@ -648,11 +661,28 @@ fieldset {
         flex-basis: 100%;
     }
     .text-button {
-    font-size: 1.4em;
-}
-    
-}
+        font-size: 1.3em;
+    }
 
+    .panel,
+    p {
+        font-size: 1.2em;
+        line-height: 1.25em;
+    }
+   
+    .middle {
+        margin: 0;
+    }
+
+    .right {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .about {
+        padding: 50px;
+        font-size: 1.8em;
+    }
+}
 
 .faq {
     display: inline-block;
@@ -662,18 +692,8 @@ fieldset {
     color: purple;
     margin-right: 10px;
     line-height: 20px;
-    "
-
 }
 
-/*Desktop*/
-
-@media only screen and (min-width: 1025) {
-    .zero-horizontal-margins {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
 
 /** mobile **/
 
@@ -699,28 +719,26 @@ fieldset {
 
     .col {
         width: 100%;
-        flex-flow: column;
-        font-size: 1.3em;
         margin-bottom: 50px;
         text-align: center;
-    }
+}
 
     .banner {
         width: 90%;
     }
     .trim h1 {
-        font-size: 1.1em;
-        font-family: 'Alegreya Sans';
+        font-size: 2em;
+        font-family: 'Alegreya ';
     }
 
     .links-div {
         flex-direction: column;
-        margin: 0;
+        margin: 50px 0;
     }
 
     .container {
         width: 90%;
-        margin: 50px auto;
+        margin-top: 50px;
     }
 
     #contact {
@@ -745,7 +763,8 @@ fieldset {
 
     .cont li {
         display: block;
-        margin: 20px;
+        margin: 0;
+        padding: 0;
     }
     .cont {
         display: inherit;
@@ -768,16 +787,31 @@ fieldset {
     }
     .flex-grid {
         flex-direction: column;
-        font-size:1em;
+        font-size: 1.3em;
+        margin-top: 0px;
     }
-    .middle {
-        margin-left: 0;
-        margin-right: 0;
-    }
+
     img {
         width: 100%;
     }
+    .about {
+        padding: 20px;
+        font-size: 1.3em;
+    }
+    .text-button {
+        font-size: 1em;
+    }
+   
+    .middle {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header img {
+        margin:10px;
+    }
 }
+
 
 
 /*FAQ ONLY*/
@@ -796,28 +830,35 @@ fieldset {
     background-color: #426f87;
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 20px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 1em;
+    font-size: 1.3em!important;
     transition: 0.4s;
 }
+
+.panel {}
 
 .active,
 .accordion:hover {
     background-color: rgba(66, 111, 135, 0.92);
 }
 
+.panel p {
+
+}
+
 .panel {
-    padding: 0 0;
     margin: 0;
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     font-size: 1.2em;
+            line-height: 1.3em;
+
 }
 
 .fa-angle-center {
@@ -825,3 +866,5 @@ fieldset {
     text-align: center;
     font-size: 2em;
 }
+
+/**media za typography/

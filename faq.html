@@ -49,8 +49,15 @@
     </div>
     <header class="header">
         <div class="header__inner ">
-            <img src="css/logo.png" alt="logo" style="height: 350px;
-    width: auto; margin-bottom: 50px;" />
+             <div class="header__inner ">
+            <picture>
+                <source srcset="images/logo-small.png" media="(max-width: 320px)">
+                <source srcset="images/logo-medium.png" media="(min-width: 767px)">
+                <source srcset="images/logo.png">
+                <img class="logo" src="images/logo.png" alt="Logo sovice">
+            </picture>
+
+        </div>
         </div>
     </header>
     <nav class="nav">
@@ -169,7 +176,7 @@
         </div>
 
         <div class="copyright">
-            Copyright @ Edukativni Centar Sovice 2018
+            Copyright &copy; Edukativni Centar Sovice 2018
         </div>
         <!-- copyright -->
 

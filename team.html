@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.slider').bxSlider();
         });
     </script>
@@ -46,7 +46,15 @@
     </div>
     <header id="header" class="header">
         <div class="header__inner ">
-            <img src="css/logo.png" alt="logo" class="logo" />
+ <div class="header__inner ">
+            <picture>
+                <source srcset="css/logo-small.png" media="(min-width: 320px)">
+                <source srcset="css/logo-medium.png" media="(min-width: 767px)">
+                <source srcset="css/logo.png">
+                <img class="logo" src="images/logo.png" alt="Logo sovice">
+            </picture>
+
+        </div>
         </div>
     </header>
     <nav class="nav">
@@ -69,87 +77,42 @@
         </ul>
     </nav>
 
-    <div class="banner ">
-        <div class="slider">
-            <img src="./images/fly_1x.jpg" />
-            <img src="./images/priredba.jpg" />
-            <img src="./images/sova_1x.jpg" />
-        </div>
-    </div>
-    <div class="trim">
-        <h1>Formula za uspješno roditeljstvo je balans između ljubavi i discipline.</h1>
-    </div>
 
     <section>
         <div class="fc">
-            <p class="about blue">O NAMA Sovice su nastale 2013. godine kada su Berina i Elma, nakon pet godina, prestale raditi u Centru za rani
-                rast i razvoj (CRRR) kroz koji su stekle veliko iskustvo vodeći radionice za djecu predškolskog uzrasta i
-                radionice za roditelje. Bile su dio multidisciplinarnog tima kojeg su činili, psiholozi, pedagozi, socijalni
-                radnici, pedijatri, ginekolozi, koji su pružali usluge za preko 500 korisnika. Mnoge edukacije, svjetskih
-                stručnjaka, koje smo prošle kroz CRRR, ali i bazično obrazovanje kroz studij Psihologije, ukazivale su na
-                važnost ranog rasta i razvoja djece (0-8 god.) kao jednog od najvažnijih perioda u životu svakog čovjeka.
-                Mozak se tada najbrže razvija i ima veliki kapacitet za promjene. Znajući za ogroman utjecaj edukacije djece
-                u najranijoj dobi na njihov cjelokupni život, i rezultate koje kvalitetna edukacija može polučiti, odlučile
-                smo se pokretanje vlastitog biznisa i otvorile Edukativni centar Sovice. 
-                
-                Želja nam je bila da nastavimo da
-                podstičemo razvoj urođenih potencijala i oblikujemo lični identitet svakog djeteta postizanjem sklada između
-                intelektualnog i emocionalnog razvoja. U Sovicama se puno radi na odnosima, empatiji, povjerenju, uči se
-                kroz igru, bilda samopuzdanje djece, smije, pleše i zabavlja. Fokus stavljamo na prave životne vrijednosti
-                kao i na postavljanje realnih granica u odgoju djece. Pomažemo djeci da donose dobre odluke kroz poučavanje,
-                ali ne zbog straha od kazne, i pružamo im šansu da uče iz svojih pogrešaka. Stvaramo optimalne uslove za
-                inspirativnu igru, učenje i rad sa djecom, uključujući i njihove roditelje. Djecu ne pripremamo samo za period
-                djetinjstva i lakše prihvatanje uloge učenika,već za cijeli život i ličnu sreću. Presretne smo što, uz tim
-                koji dijeli istu viziju i filozofiju Sovica, možemo djeci da pružimo okruženje ispunjeno osjećajem pripadnosti,
-                sigurnosti, povezanosti, uvažavanja, razigranosti, ali i strukture. Zahvalne smo svim porodicama koje su
-                    dopustile da budemo dio njihovih života. Hvala vam što ste omogućili da snovi Sovica žive!</p>
-            </p>
+            <p class="about blue">O NAMA<br>Sovice su nastale 2013. godine kada su Berina i Elma, nakon pet godina, prestale raditi u Centru za rani rast i razvoj (CRRR) kroz koji su stekle veliko iskustvo vodeći radionice za djecu predškolskog uzrasta i radionice za roditelje. Bile su dio multidisciplinarnog tima kojeg su činili, psiholozi, pedagozi, socijalni radnici, pedijatri, ginekolozi, koji su pružali usluge za preko 500 korisnika. Mnoge edukacije, svjetskih stručnjaka, koje smo prošle kroz CRRR, ali i bazično obrazovanje kroz studij Psihologije, ukazivale su na važnost ranog rasta i razvoja djece (0-8 god.) kao jednog od najvažnijih perioda u životu svakog čovjeka. Mozak se tada najbrže razvija i ima veliki kapacitet za promjene. Znajući za ogroman utjecaj edukacije djece u najranijoj dobi na njihov cjelokupni život, i rezultate koje kvalitetna edukacija može polučiti, odlučile smo se pokretanje vlastitog biznisa i otvorile Edukativni centar Sovice.
+
+                <br> Želja nam je bila da nastavimo da podstičemo razvoj urođenih potencijala i oblikujemo lični identitet svakog djeteta postizanjem sklada između intelektualnog i emocionalnog razvoja. U Sovicama se puno radi na odnosima, empatiji, povjerenju, uči se kroz igru, bilda samopuzdanje djece, smije, pleše i zabavlja. Fokus stavljamo na prave životne vrijednosti kao i na postavljanje realnih granica u odgoju djece. Pomažemo djeci da donose dobre odluke kroz poučavanje, ali ne zbog straha od kazne, i pružamo im šansu da uče iz svojih pogrešaka. Stvaramo optimalne uslove za inspirativnu igru, učenje i rad sa djecom, uključujući i njihove roditelje. Djecu ne pripremamo samo za period djetinjstva i lakše prihvatanje uloge učenika,već za cijeli život i ličnu sreću. Presretne smo što, uz tim koji dijeli istu viziju i filozofiju Sovica, možemo djeci da pružimo okruženje ispunjeno osjećajem pripadnosti, sigurnosti, povezanosti, uvažavanja, razigranosti, ali i strukture. Zahvalne smo svim porodicama koje su dopustile da budemo dio njihovih života. <br><br> Hvala vam što ste omogućili da snovi Sovica žive!</p>
+
             <div class="flex-grid">
-                <div class="col left blue" >
-                    <div class="col-title">ELMA, <br/>VLASNICA I DIREKTORICA ZA KVALITETU</div>
-                    <img class="color1" src="images/elma.jpg" />
+                <div class="col left blue">
+                    <div class="col-title">
+                        <h4>ELMA, VLASNICA <br/>I DIREKTORICA ZA KVALITETU</h4>
+                    </div>
+                    <img class="color1" src="images/elma.jpg" alt="ُElma članica tima"/>
                     <div class="text-button">
-                        Volim raditi sa malom djecom, jer su brzo vidljivi rezultati nakon uloženog truda, što nije bio slučaj na prethodnim radnim
-                        mjestima. Pored toga istinski uživam u njihovoj znatiželji, iskrenosti, individualnosti i želji za
-                        usvajanjem novih stvari. Jako me privlači dinamično i kreativno okruženje, gdje svakodnevno imate
-                        priliku da plešete, zabavljate se, nasmijete do suza i probudite dijete u sebi. Najviše volim pažnju
-                        usmjeriti na art projekte i istim temama dati notu novog i svježeg, kako sadržaj ne bi bio monoton.
-                        Ispunjava me i rad sa roditeljima, posebno tematika povezanosti između stila privrženosti i doživljaja
-                        sebe i drugih. Ovaj posao daje priliku da i vi kao edukator, zajedno sa djecom, rastete i razvijate
-                        se svaki dan i po tome bih rekla da je magičan. “Doing what you like is freedom, liking what you
-                        do is happiness.” &#9786;
+                        Volim raditi sa malom djecom, jer su brzo vidljivi rezultati nakon uloženog truda, što nije bio slučaj na prethodnim radnim mjestima. Pored toga istinski uživam u njihovoj znatiželji, iskrenosti, individualnosti i želji za usvajanjem novih stvari. Jako me privlači dinamično i kreativno okruženje, gdje svakodnevno imate priliku da plešete, zabavljate se, nasmijete do suza i probudite dijete u sebi. Najviše volim pažnju usmjeriti na art projekte i istim temama dati notu novog i svježeg, kako sadržaj ne bi bio monoton. Ispunjava me i rad sa roditeljima, posebno tematika povezanosti između stila privrženosti i doživljaja sebe i drugih. Ovaj posao daje priliku da i vi kao edukator, zajedno sa djecom, rastete i razvijate se svaki dan i po tome bih rekla da je magičan. “Doing what you like is freedom, liking what you do is happiness.” &#9786;
 
                     </div>
 
                 </div>
-                <div class="col middle lila" >
-                    <div class="col-title">BERINA,<br> VLASNICA I IZVRSNA DIREKTORICA</div>
-                    <img class="color2" src="./images/berina.jpg" />
-                    <div class="text-button">Još odmalena sam bila jako usmjerena na odnose među ljudima, njihove emocije i komunikaciju. Na prvi
-                        susret, zaljubila sam se u rad sa djecom jer me svakodnevno podsjećaju na izvorne ljudske vrijednosti
-                        iskrenost, neposrednost, autentičnost, zaigranost, uživanje u momentu... Učenje o okolini, nama samima
-                        i svijetu koji nas okružuje na najzanimljivije načine kroz eksperimente i naučne projekte su moje
-                        omiljene teme rada s mališanima. Njihovo poimanje svijeta, čiji su aktivni sudionici, svaki put me
-                        iznova fascinira. Slobodna i vesela igra kroz poligone na otvorenom, timske i takmičarske igre koje
-                        zahtijevaju poštivanje pravila i jačaju samokontrolu su aktivnosti u kojima beskrajno uživam. Pjesma
-                        i ples su najbolji način da se i najtmurniji dan oboji bojama veselja i ljubavi. Sretna sam što radim
-                        posao koji neizmjerno volim, a moja ideja vodilja u radu sa mališanima je da „um nije posuda koju
-                        treba napuniti, već vatra koju treba zapaliti“.
+                <div class="col middle lila">
+                    <div class="col-title">
+                        <h4>BERINA, VLASNICA <br> I IZVRŠNA DIREKTORICA</h4>
+                    </div>
+                    <img class="color2" src="./images/berina.jpg" alt="Berina članica tima"/>
+                    <div class="text-button">Još odmalena sam bila jako usmjerena na odnose među ljudima, njihove emocije i komunikaciju. Na prvi susret, zaljubila sam se u rad sa djecom jer me svakodnevno podsjećaju na izvorne ljudske vrijednosti iskrenost, neposrednost, autentičnost, zaigranost, uživanje u momentu... Učenje o okolini, nama samima i svijetu koji nas okružuje na najzanimljivije načine kroz eksperimente i naučne projekte su moje omiljene teme rada s mališanima. Njihovo poimanje svijeta, čiji su aktivni sudionici, svaki put me iznova fascinira. Slobodna i vesela igra kroz poligone na otvorenom, timske i takmičarske igre koje zahtijevaju poštivanje pravila i jačaju samokontrolu su aktivnosti u kojima beskrajno uživam. Pjesma i ples su najbolji način da se i najtmurniji dan oboji bojama veselja i ljubavi. Sretna sam što radim posao koji neizmjerno volim, a moja ideja vodilja u radu sa mališanima je da „um nije posuda koju treba napuniti, već vatra koju treba zapaliti“.
 
                     </div>
                 </div>
-                <div class="col right grey" >
-                    <div class="col-title ">LELA,<br> VODITELJICA GRUPE
-                        </div>
-                    <img class="color3" src="./images/lela.jpg" />
+                <div class="col right grey">
+                    <div class="col-title ">
+                        <h4>LELA,<br> VODITELJICA GRUPE
+                        </h4>
+                    </div>
+                    <img class="color3" src="./images/lela.jpg" alt="Lela članica tima"/>
                     <div class="text-button">
-                        Biram da radim sa djecom, jer vjerujem da se najvažnije ljudske osobine i vrijednosti - samosvjesnost, samokontrola, emocionalna
-                        inteligencija, kako biti sretan, društvena interakcija, rješavanje problema, saradnja, pregovaranje,
-                        empatija, tolerancija, fleksibilnost, samostalnost - mogu učiti i to već u najranijoj dobi. Ja se
-                        ne osjećam kao da svaki dan idem na posao. Ja dolazim na mjesto gdje se igram, plešem, zezam, sa
-                        djecom istražujem svijet, bivam kreativna, upoznajem vlastite mehanizme nošenja sa raznim situacijama,
-                        postajem emocionalno inteligentnija osoba, konstantno učim, istražujem i razvijam se u mnogo razlicitih
-                        polja. A od djece dobijem i iskrenu zahvalnost za sva znanja koja im pružim.
+                        Biram da radim sa djecom, jer vjerujem da se najvažnije ljudske osobine i vrijednosti - samosvjesnost, samokontrola, emocionalna inteligencija, kako biti sretan, društvena interakcija, rješavanje problema, saradnja, pregovaranje, empatija, tolerancija, fleksibilnost, samostalnost - mogu učiti i to već u najranijoj dobi. Ja se ne osjećam kao da svaki dan idem na posao. Ja dolazim na mjesto gdje se igram, plešem, zezam, sa djecom istražujem svijet, bivam kreativna, upoznajem vlastite mehanizme nošenja sa raznim situacijama, postajem emocionalno inteligentnija osoba, konstantno učim, istražujem i razvijam se u mnogo razlicitih polja. A od djece dobijem i iskrenu zahvalnost za sva znanja koja im pružim.
 
                     </div>
                 </div>
@@ -194,7 +157,7 @@
         </div>
 
         <div class="copyright">
-            Copyright @ Edukativni Centar Sovice 2018
+            Copyright &copy; Edukativni Centar Sovice 2018
         </div>
         <!-- copyright -->
 
@@ -204,7 +167,7 @@
         var header = document.getElementById("header");
         var btns = header.getElementsByClassName("nav__item");
         for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
+            btns[i].addEventListener("click", function() {
                 var current = document.getElementsByClassName("active");
                 current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";

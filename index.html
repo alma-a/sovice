@@ -47,13 +47,14 @@
 
         </div>
     </div>
-    </div>
+    
     <header id="header" class="header">
         <div class="header__inner ">
             <picture>
-                <source srcset="css/logo-small.png" media="(max-width: 400px)">
-                <source srcset="css/logo.jpg">
-                <img class="logo" src="css/logo.png" alt="Logo sovice">
+                <source srcset="images/logo-small.png" media="(min-width: 320px)">
+                <source srcset="images/logo-medium.png" media="(min-width: 767px)">
+                <source srcset="images/logo.png">
+                <img class="logo" src="images/logo.png" alt="Logo sovice">
             </picture>
 
         </div>
@@ -80,8 +81,19 @@
 
     <div class="banner ">
         <div class="slider">
-            <img src="./images/fly_1x.jpg" />
-            <img src="./images/priredba.jpg" />
+            <picture>
+                <source srcset="./images/priredba-2x.jpg" media="(min-width: 320px)">
+                <source srcset="./images/priredba-2x.jpg" media="(min-width: 767px)">
+                <source srcset="./images/priredba.jpg">
+                <img src="./images/priredba.jpg" alt="priredba"/>
+            </picture>
+            <picture>
+                <source srcset="./images/fly-2x.jpg"  media="(min-width: 320px)">
+                <source srcset="./images/fly_1x.jpg"  media="(min-width: 767px)">
+                <source srcset="./images/fly_1x.jpg" >
+                <img src="./images/priredba.jpg" alt="priredba"/>
+            </picture>
+            
             <img src="./images/sova_1x.jpg" />
         </div>
     </div>
@@ -92,8 +104,8 @@
     <section>
         <div class="fc">
             <div class="flex-grid">
-                <div class="left blue">
-                    <div class="col-title">Play therapy</div>
+                <div class="col left blue">
+                    <div class="col-title"><h4>Play therapy</h4></div>
                     <img class="color1" src="images/playtherapy.jpg" />
                     <div class="caption">
                         <button class="accordion">Sovice su vrijedno učile i radile, pa na kraju i zaslužile svoje certifikate u Zagrebu na edukaciji
@@ -120,8 +132,8 @@
                     </div>
 
                 </div>
-                <div class="middle lila zero-horizontal-margins">
-                    <div class="col-title">Kutak za roditelje</div>
+                <div class="col middle lila ">
+                    <div class="col-title"><h4>Kutak za roditelje</h4></div>
                     <div>
                         <img class="color2" src="./images/horngirl.jpg" />
                         <div class="caption">
@@ -149,8 +161,8 @@
                     </div>
                     
                 </div>
-                <div class="right grey">
-                    <div class="col-title ">Kako se prijaviti</div>
+                <div class="col right grey">
+                    <div class="col-title "><h4>Kako se prijaviti</h4></div>
                     <img class="color3" src="./images/2girls.jpg" />
                     <div class="caption">
                         <button class="accordion">Kako se upisati ili dobiti više informacija? Za sva dodatna pitanja i nedoumice, ljubazno vas molimo
@@ -177,10 +189,10 @@
         </div>
     </section>
 
-    <div class="map trim" style="background: white; ">
-        <h1 style="padding: 0px ">Gdje se nalazimo</h1>
-        <div id="map"></div>
-    </div>
+    <div class="map" style="background: white; border-top: 1px solid darkgrey; ">
+        <h2  style="padding: 0px; color: grey; font-family: 'Alegreya Sans'">Gdje se nalazimo</h1>
+      </div>  <div id="map"></div>
+    
     <footer>
         <div class="cont">
             <div class="links">
@@ -206,18 +218,18 @@
             <div class="social">
                 Pratite nas &nbsp;&nbsp;&nbsp;
                 <a class="list-group-item" href="https://www.facebook.com/sovice.sarajevo/">
-                    <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>&nbsp; </a>
+                    <i class="fa fa-facebook fa-1x fa-fw" aria-hidden="true"></i>&nbsp; </a>
                 <a class="list-group-item" href="https://www.instagram.com/edukativnicentarsovice/">
-                    <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>&nbsp; </a>
+                    <i class="fa fa-instagram fa-1x fa-fw" aria-hidden="true"></i>&nbsp; </a>
                 <a class="list-group-item" href="mailto:centar.sovice@gmail.com" target="_top">
-                    <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>&nbsp; </a>
+                    <i class="fa fa-envelope fa-1x fa-fw" aria-hidden="true"></i>&nbsp; </a>
             </div>
             <!-- social -->
 
         </div>
 
         <div class="copyright">
-            Copyright @ Edukativni Centar Sovice 2018
+            Copyright &copy; Edukativni Centar Sovice 2018
         </div>
         <!-- copyright -->
 
