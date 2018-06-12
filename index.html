@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.slider').bxSlider();
         });
 
@@ -39,15 +39,14 @@
 
                 <div style="float: right; display: inline-block; ">
                     <a href="faq.html">
-                        <div class="faq">
-                            <i class="fa fa-question"></i>
-                        </div>FAQ</a>
+                        <question>FAQ</question>
+                    </a>
                 </div>
             </div>
 
         </div>
     </div>
-    
+
     <header id="header" class="header">
         <div class="header__inner ">
             <picture>
@@ -82,19 +81,23 @@
     <div class="banner ">
         <div class="slider">
             <picture>
-                <source srcset="./images/priredba-2x.jpg" media="(min-width: 320px)">
-                <source srcset="./images/priredba-2x.jpg" media="(min-width: 767px)">
+                <source srcset="./images/priredba-2x.jpg" media="(max-width: 767px)">
+                <source srcset="./images/priredba.jpg" media="(max-width: 1200px)">
                 <source srcset="./images/priredba.jpg">
-                <img src="./images/priredba.jpg" alt="priredba"/>
+                <img src="./images/priredba.jpg" alt="priredba" />
             </picture>
             <picture>
-                <source srcset="./images/fly-2x.jpg"  media="(min-width: 320px)">
-                <source srcset="./images/fly_1x.jpg"  media="(min-width: 767px)">
-                <source srcset="./images/fly_1x.jpg" >
-                <img src="./images/priredba.jpg" alt="priredba"/>
+                <source srcset="./images/fly-2x.jpg" media="(max-width: 767px)">
+                <source srcset="./images/fly-1x.jpg" media="(max-width: 1200px)">
+                <source srcset="./images/fly-1x.jpg">
+                <img src="./images/priredba.jpg" alt="priredba" />
             </picture>
-            
-            <img src="./images/sova_1x.jpg" />
+            <picture>
+                <source srcset="./images/sova-2x.jpg" media="(max-width: 767px)">
+                <source srcset="./images/sova-1x.jpg" media="(max-width: 1200px)">
+                <source srcset="./images/sova-1x.jpg" alt="sova">
+                <img src="./images/sova-1x.jpg" />
+            </picture>
         </div>
     </div>
     <div class="trim">
@@ -105,7 +108,9 @@
         <div class="fc">
             <div class="flex-grid">
                 <div class="col left blue">
-                    <div class="col-title"><h4>Play therapy</h4></div>
+                    <div class="col-title">
+                        <h4>Play therapy</h4>
+                    </div>
                     <img class="color1" src="images/playtherapy.jpg" />
                     <div class="caption">
                         <button class="accordion">Sovice su vrijedno učile i radile, pa na kraju i zaslužile svoje certifikate u Zagrebu na edukaciji
@@ -116,16 +121,7 @@
                             </div>
                         </button>
                         <div class="panel">
-                            <p>Ponosne smo što ćemo prve u BiH primjenjivati ove jako korisne alate u radu, koji potiču socio-emocionalni
-                                razvoj djeteta. Cilj edukacije je bio naučiti kako koristiti vještine iz terapeutske igre
-                                u grupnom radu,a ne individualno. Dajemo djeci priliku da donesu odluku, razriješe svoje
-                                probleme i preuzmu odgovornost za svoje postupke u većoj mjeri nego što im je dopušteno u
-                                svakodnevnom životu. Namijenjena je djeci koja imaju poteškoće sa upravljanjem ljutnje, poteškoće
-                                pri koncentraciji poteškoće u kontaktima sa drugom djecom i/ili odraslima, djeci ciji su
-                                roditelji u procesu brakorazvoda ili razvedeni, djeci koja su svjedočila nasilju, djeci koja
-                                su izgubila blisku osobu, djeci sa poteškoćama u komunikaciji ili jednostavno za poboljšanje
-                                odnosa RODITELJ-DIJETE. Hvala od srca još jednom Centar Proventus i našoj dragoj Tei Knežević
-                                na nesebičnoj podjeli znanja
+                            <p>Ponosne smo što ćemo prve u BiH primjenjivati ove jako korisne alate u radu, koji potiču socio-emocionalni razvoj djeteta. Cilj edukacije je bio naučiti kako koristiti vještine iz terapeutske igre u grupnom radu,a ne individualno. Dajemo djeci priliku da donesu odluku, razriješe svoje probleme i preuzmu odgovornost za svoje postupke u većoj mjeri nego što im je dopušteno u svakodnevnom životu. Namijenjena je djeci koja imaju poteškoće sa upravljanjem ljutnje, poteškoće pri koncentraciji poteškoće u kontaktima sa drugom djecom i/ili odraslima, djeci ciji su roditelji u procesu brakorazvoda ili razvedeni, djeci koja su svjedočila nasilju, djeci koja su izgubila blisku osobu, djeci sa poteškoćama u komunikaciji ili jednostavno za poboljšanje odnosa RODITELJ-DIJETE. Hvala od srca još jednom Centar Proventus i našoj dragoj Tei Knežević na nesebičnoj podjeli znanja
                             </p>
                         </div>
 
@@ -133,7 +129,9 @@
 
                 </div>
                 <div class="col middle lila ">
-                    <div class="col-title"><h4>Kutak za roditelje</h4></div>
+                    <div class="col-title">
+                        <h4>Kutak za roditelje</h4>
+                    </div>
                     <div>
                         <img class="color2" src="./images/horngirl.jpg" />
                         <div class="caption">
@@ -145,24 +143,17 @@
                                 </div>
                             </button>
                             <div class="panel ">
-                                <p>Ponosne smo što ćemo prve u BiH primjenjivati ove jako korisne alate u radu, koji potiču socio-emocionalni
-                                    razvoj djeteta. Cilj edukacije je bio naučiti kako koristiti vještine iz terapeutske igre
-                                    u grupnom radu,a ne individualno. Dajemo djeci priliku da donesu odluku, razriješe svoje
-                                    probleme i preuzmu odgovornost za svoje postupke u većoj mjeri nego što im je dopušteno u
-                                    svakodnevnom životu. Namijenjena je djeci koja imaju poteškoće sa upravljanjem ljutnje, poteškoće
-                                    pri koncentraciji poteškoće u kontaktima sa drugom djecom i/ili odraslima, djeci ciji su
-                                    roditelji u procesu brakorazvoda ili razvedeni, djeci koja su svjedočila nasilju, djeci koja
-                                    su izgubila blisku osobu, djeci sa poteškoćama u komunikaciji ili jednostavno za poboljšanje
-                                    odnosa RODITELJ-DIJETE. Hvala od srca još jednom Centar Proventus i našoj dragoj Tei Knežević
-                                    na nesebičnoj podjeli znanja
+                                <p>Ponosne smo što ćemo prve u BiH primjenjivati ove jako korisne alate u radu, koji potiču socio-emocionalni razvoj djeteta. Cilj edukacije je bio naučiti kako koristiti vještine iz terapeutske igre u grupnom radu,a ne individualno. Dajemo djeci priliku da donesu odluku, razriješe svoje probleme i preuzmu odgovornost za svoje postupke u većoj mjeri nego što im je dopušteno u svakodnevnom životu. Namijenjena je djeci koja imaju poteškoće sa upravljanjem ljutnje, poteškoće pri koncentraciji poteškoće u kontaktima sa drugom djecom i/ili odraslima, djeci ciji su roditelji u procesu brakorazvoda ili razvedeni, djeci koja su svjedočila nasilju, djeci koja su izgubila blisku osobu, djeci sa poteškoćama u komunikaciji ili jednostavno za poboljšanje odnosa RODITELJ-DIJETE. Hvala od srca još jednom Centar Proventus i našoj dragoj Tei Knežević na nesebičnoj podjeli znanja
                                 </p>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col right grey">
-                    <div class="col-title "><h4>Kako se prijaviti</h4></div>
+                    <div class="col-title ">
+                        <h4>Kako se prijaviti</h4>
+                    </div>
                     <img class="color3" src="./images/2girls.jpg" />
                     <div class="caption">
                         <button class="accordion">Kako se upisati ili dobiti više informacija? Za sva dodatna pitanja i nedoumice, ljubazno vas molimo
@@ -177,8 +168,8 @@
                                 <phone>033/212-397</phone>
                                 (u terminu od 10:00 do 14:00)
                                 <br>
-                                <email>centar.sovice@gmail.com </email>
-                                ili
+                                <email> centar.sovice@gmail.com </email>
+                                ili<br>
                                 <facebook>Edukativni Centar Sovice </facebook>
                             </p>
                         </div>
@@ -189,10 +180,11 @@
         </div>
     </section>
 
-    <div class="map" style="background: white; border-top: 1px solid darkgrey; ">
-        <h2  style="padding: 0px; color: grey; font-family: 'Alegreya Sans'">Gdje se nalazimo</h1>
-      </div>  <div id="map"></div>
-    
+    <div class="map">
+        <h2 style="map-h2">Gdje se nalazimo</h1>
+    </div>
+    <div id="map"></div>
+
     <footer>
         <div class="cont">
             <div class="links">
@@ -239,7 +231,7 @@
         var header = document.getElementById("header");
         var btns = header.getElementsByClassName("nav__item");
         for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
+            btns[i].addEventListener("click", function() {
                 var current = document.getElementsByClassName("active");
                 current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";
@@ -268,7 +260,7 @@
         var i;
 
         for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
+            acc[i].addEventListener("click", function() {
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {

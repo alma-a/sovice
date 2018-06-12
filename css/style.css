@@ -40,9 +40,9 @@ ul {
 
 .header__inner {
     margin: 0 auto;
-    text-align:  center;
+    text-align: center;
     display: block;
-    width:30%;    
+    width: 30%;
 }
 
 .nav {
@@ -73,7 +73,7 @@ ul {
 }
 
 .nav__item {
-   
+
     align-content: stretch;
     justify-content: space-around;
     text-transform: uppercase;
@@ -87,7 +87,7 @@ ul {
     text-decoration: none;
     color: #426f87;
     font-size: 1.3em;
-    font-family: 'Alegrey';
+    font-family: 'Alegreya';
 }
 
 .active a {
@@ -115,7 +115,7 @@ a:visited {
 .li-fa {
     display: inline-block;
     color: white;
-    font-family: 'Alegreya';
+    font-family: 'Alegreya Sans';
     font-size: 1.3em;
 }
 
@@ -216,6 +216,21 @@ phone:after {
     /* Adjust as needed */
 }
 
+question {
+    position: relative;
+    /* Helps us control overlap */
+    padding: 25px;
+    /* Creates space for the Phone Icon */
+}
+
+question:after {
+    content: '\f059';
+    font-family: fontAwesome;
+    position: absolute;
+    left: 0;
+    /* Adjust as needed */
+}
+
 email {
     position: relative;
     /* Helps us control overlap */
@@ -229,7 +244,7 @@ email:after {
     position: absolute;
     left: 0;
     /* Adjust as needed */
-    top: 3px;
+    top: 0px;
     /* Adjust as needed */
 }
 
@@ -241,12 +256,12 @@ facebook {
 }
 
 facebook:after {
-    content: '\f39e';
+    content: '\f09a';
     font-family: fontAwesome;
     position: absolute;
     left: 0;
     /* Adjust as needed */
-    top: 3px;
+    top: 0px;
     /* Adjust as needed */
 }
 
@@ -336,7 +351,7 @@ img {
 
 .text-button {
     font-size: 1.2em;
-    line-height:1.4em;
+    line-height: 1.4em;
 
 }
 
@@ -464,6 +479,8 @@ footer li:last-of-type {
     padding: 20px;
     padding-top: 0px;
     overflow: hidden;
+    background: white;
+    border-top: 1px solid darkgrey; 
 }
 
 #map {
@@ -669,7 +686,7 @@ fieldset {
         font-size: 1.2em;
         line-height: 1.25em;
     }
-   
+
     .middle {
         margin: 0;
     }
@@ -721,15 +738,12 @@ fieldset {
         width: 100%;
         margin-bottom: 50px;
         text-align: center;
-}
+    }
 
     .banner {
         width: 90%;
     }
-    .trim h1 {
-        font-size: 2em;
-        font-family: 'Alegreya ';
-    }
+
 
     .links-div {
         flex-direction: column;
@@ -801,14 +815,13 @@ fieldset {
     .text-button {
         font-size: 1em;
     }
-   
+
     .middle {
         margin: 0px;
         padding: 0px;
     }
-
-    .header img {
-        margin:10px;
+    .logo {
+        margin: 10px auto;
     }
 }
 
@@ -846,9 +859,7 @@ fieldset {
     background-color: rgba(66, 111, 135, 0.92);
 }
 
-.panel p {
-
-}
+.panel p {}
 
 .panel {
     margin: 0;
@@ -857,7 +868,7 @@ fieldset {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     font-size: 1.2em;
-            line-height: 1.3em;
+    line-height: 1.3em;
 
 }
 
