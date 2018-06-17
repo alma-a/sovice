@@ -20,7 +20,6 @@
         $(document).ready(function() {
             $('.slider').bxSlider();
         });
-
     </script>
 
     <title>EC Sovice </title>
@@ -47,7 +46,7 @@
         </div>
     </div>
 
-    <header id="header" class="header">
+    <header class="header-index">
         <div class="header__inner ">
             <picture>
                 <source srcset="images/logo-small.png" media="(min-width: 320px)">
@@ -135,15 +134,15 @@
                     <div>
                         <img class="color2" src="./images/horngirl.jpg" />
                         <div class="caption">
-                            <button class="accordion">Sovice su vrijedno učile i radile, pa na kraju i zaslužile svoje certifikate u Zagrebu na edukaciji
-                                o primjeni tehnika iz Play therapy.
+                            <button class="accordion">Radionice za roditelje se u našem Centru održavaju prema interesima roditelja, u ciklusima ili pojedinačno. 
                                 <br>
                                 <div class="fa-angle-center">
                                     <i class="fa fa-angle-down"></i>
                                 </div>
                             </button>
                             <div class="panel ">
-                                <p>Ponosne smo što ćemo prve u BiH primjenjivati ove jako korisne alate u radu, koji potiču socio-emocionalni razvoj djeteta. Cilj edukacije je bio naučiti kako koristiti vještine iz terapeutske igre u grupnom radu,a ne individualno. Dajemo djeci priliku da donesu odluku, razriješe svoje probleme i preuzmu odgovornost za svoje postupke u većoj mjeri nego što im je dopušteno u svakodnevnom životu. Namijenjena je djeci koja imaju poteškoće sa upravljanjem ljutnje, poteškoće pri koncentraciji poteškoće u kontaktima sa drugom djecom i/ili odraslima, djeci ciji su roditelji u procesu brakorazvoda ili razvedeni, djeci koja su svjedočila nasilju, djeci koja su izgubila blisku osobu, djeci sa poteškoćama u komunikaciji ili jednostavno za poboljšanje odnosa RODITELJ-DIJETE. Hvala od srca još jednom Centar Proventus i našoj dragoj Tei Knežević na nesebičnoj podjeli znanja
+                                <p>Nekada se radi o ciklusu radionica, kao što je bio trening roditeljskih vještina “SRETAN RODITELJ – SRETNO DIJETE”, a nekada organizujemo pojedinačne radionice. Sve radionice su iskustvenog karaktera, gdje zajedno učimo vještine i strategije koje koristimo svakodnevno u ulozi roditelja. Pomažemo vam da naučite kako svijet posmatrati očima djeteta i učimo o njegovoj ličnosti kako bi ga što bolje razumjeli. Pored toga što pružamo podršku ranom razvoju djece, akcenat stavljamo i na jačanje porodičnih odnosa. “Iza svakog djeteta koji vjeruje u sebe, stoji roditelj koji je vjerovao prvi” (Mathew L. Jacobson)
+
                                 </p>
                             </div>
                         </div>
@@ -239,20 +238,19 @@
         }
 
         function initMap() {
-            var uluru = {
+            var sovice = {
                 lat: 43.8477024,
                 lng: 18.3744389
             };
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 16,
-                center: uluru,
+                center: sovice,
             });
             var marker = new google.maps.Marker({
-                position: uluru,
+                position: sovice,
                 map: map
             });
         }
-
     </script>
 
     <script>
@@ -270,11 +268,8 @@
                 }
             });
         }
-
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKTnqbiKbrlFsb6j_siFm8KhCxFLHyJKE&callback=initMap">
-
-
     </script>
 </body>
 

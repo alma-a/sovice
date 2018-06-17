@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Alegreya Sans', 'Alegreya';
-    font-size: 100%;
+    font-size: 16px;
     min-width: 320px;
 }
 
@@ -106,6 +106,7 @@ a:visited {
 
 .nav__list {
     display: flex;
+    display:-webkit-flex;
     flex-grow: 1;
     width: 100%;
     list-style-type: none;
@@ -148,7 +149,7 @@ a {
     display: block;
     margin: 50px auto;
     text-align: center;
-    background-color: rgb(164, 106, 147);
+    background-color: #a46a93;
     padding: 4%;
 }
 
@@ -158,6 +159,7 @@ a {
 
 .flex-grid {
     display: flex;
+    display:-webkit-flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
@@ -289,8 +291,7 @@ img {
 }
 
 .blue {
-    /*    color: #426f87;*/
-    color: rgb(105, 105, 105);
+    color: #426f87;
 }
 
 .blue .panel {
@@ -298,39 +299,37 @@ img {
     color: white;
 }
 
-.blue .panel .accordion {
-    background-color: red;
-
-}
 
 .lila .panel {
     background-color: rgb(164, 106, 147, 0.7);
     color: white;
 }
 
+.grey .panel {
+    background-color: rgb(105, 105, 105, 0.7);
+    color: white;
+}
+
 .lila {
-    color: rgb(105, 105, 105);
+    color: #a46a93;
 }
 
 .grey {
-    color: rgb(105, 105, 105);
+    color: grey;
 }
 
 .color1 {
-    border-top: 5px solid #426f87 !important;
+    border-top: 5px solid #a46a93 !important;
 }
 
 .color2 {
-    border-top: 5px solid rgb(164, 106, 147) !important;
+    border-top: 5px solid #426f87 !important;
 }
 
 .color3 {
-    border-top: 5px solid rgb(105, 105, 105) !important;
+    border-top: 5px solid #8b9fa6 !important;
 }
 
-.color4 {
-    border-top: 5px solid blue !important;
-}
 
 .caption {
     margin: 0 auto;
@@ -361,22 +360,12 @@ img {
     line-height: 1.3em;
 }
 
-/*button {
-    width: 50%;
-    margin: 11px 0 0;
-    padding: 10px 30px;
-    border: none;
-    color: white;
-    background-color: #a46a93;
-    border-radius: 2px;
-    font-size: 1em;
-}*/
 
 footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgb(164, 106, 147);
+    background: #a46a93;
     padding: 2px 0 0px 0;
     margin-top: 50px;
 
@@ -384,6 +373,7 @@ footer {
 
 .cont {
     display: flex;
+    display:-webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -472,6 +462,12 @@ footer li:last-of-type {
     /* centers image/element on "left: 50%" position */
 }
 
+.map-h2 {
+    padding: 0px;
+    color: grey;
+    font-family: 'Alegreya';
+}
+
 .map {
     right: 0;
     bottom: 0;
@@ -480,7 +476,7 @@ footer li:last-of-type {
     padding-top: 0px;
     overflow: hidden;
     background: white;
-    border-top: 1px solid darkgrey; 
+    border-top: 1px solid darkgrey;
 }
 
 #map {
@@ -529,15 +525,22 @@ footer li:last-of-type {
     width: 80%;
 }
 
-
 #contact h3 {
     display: block;
-    font-size: 30px;
+    font-size: 1.2em;
     font-weight: 300;
     margin: 10px 0;
     font-family: 'Alegreya Sans';
     color: #a46a93;
-    ;
+}
+
+#address h3 {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 10px 0;
+    font-family: 'Alegreya Sans';
+    color: #a46a93;
 }
 
 #contact h4 {
@@ -613,19 +616,19 @@ fieldset {
 }
 
 ::-webkit-input-placeholder {
-    color: #888;
+    color: #8b9fa6;
 }
 
 :-moz-placeholder {
-    color: #888;
+    color: #8b9fa6;
 }
 
 ::-moz-placeholder {
-    color: #888;
+    color: #8b9fa6;
 }
 
 :-ms-input-placeholder {
-    color: #888;
+    color: #8b9fa6;
 }
 
 
@@ -636,12 +639,12 @@ fieldset {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+
     .col {
         width: 100%;
         font-size: 1.3em;
         margin-bottom: 50px;
         text-align: center;
-
     }
     .accordion {
         font-size: 1.6em!important;
@@ -661,9 +664,8 @@ fieldset {
 
     .nav__item {
         margin: 0;
-        padding: 0.8em;
-        font-size: 0.9em;
-
+        padding: 0.3em;
+        font-size: 1.1em;
     }
     .links {
         flex: unset;
@@ -716,8 +718,17 @@ fieldset {
 
 @media only screen and (max-width: 767px) {
 
+    .header {
+        display: none;
+    }
+    .nav__item {
+        margin: 0;
+        padding: 0.3em;
+        font-size: 0.9em;
+    }
     .container #address {
         text-align: center;
+
     }
 
     nav {
@@ -744,10 +755,12 @@ fieldset {
         width: 90%;
     }
 
-
+    footer {
+        margin-top: 0;
+    }
     .links-div {
         flex-direction: column;
-        margin: 50px 0;
+        margin: 0 auto;
     }
 
     .container {
@@ -757,7 +770,7 @@ fieldset {
 
     #contact {
         max-width: 80%;
-        margin: 0 auto;
+        margin: 0;
     }
 
     #map {
@@ -772,7 +785,7 @@ fieldset {
         margin-top: 30px;
         order: 1;
         max-width: 80%;
-        margin: 0 auto;
+        margin: 50px auto;
     }
 
     .cont li {
@@ -823,6 +836,9 @@ fieldset {
     .logo {
         margin: 10px auto;
     }
+    .trim {
+        margin: 10px;
+    }
 }
 
 
@@ -852,14 +868,13 @@ fieldset {
     transition: 0.4s;
 }
 
-.panel {}
+
 
 .active,
 .accordion:hover {
     background-color: rgba(66, 111, 135, 0.92);
 }
 
-.panel p {}
 
 .panel {
     margin: 0;
@@ -869,7 +884,7 @@ fieldset {
     transition: max-height 0.2s ease-out;
     font-size: 1.2em;
     line-height: 1.3em;
-
+    padding: 0 18px;
 }
 
 .fa-angle-center {
